@@ -1,0 +1,41 @@
+.el-row{
+    &::after,&::before{
+      display: block;
+      content:"";
+    }
+    &::after{
+      clear: both;
+    }
+    &--flex{
+      display: flex;
+      &::after,
+      &::before{
+        display: none;
+      }
+      &.flex-justify-start{
+        justify-content: flex-start;
+      }
+      &.flex-justify-end{
+        justify-content:flex-end;
+      }
+      &.flex-justify-center{
+        justify-content: center;
+      }
+      &.flex-justify-space-around{
+        justify-content: space-around;
+      }
+      &.flex-justify-space-between{
+        justify-content: space-between;
+      }
+      &.flex-align-top{
+        align-items:flex-start;
+      }
+      &.flex-align-middle{
+        align-items:center;
+      }
+      &.flex-align-bottom{
+        align-items:flex-end;
+      }
+    }
+  }
+  
